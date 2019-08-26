@@ -23,25 +23,15 @@ default: &default
 
 development:
   <<: *default
-  database: to_do_list_development
-
-  # The specified database role being used to connect to postgres.
-  # To create additional roles in postgres see `$ createuser --help`.
-  # When left blank, postgres will use the default role. This is
-  # the same name as the operating system user that initialized the database.
-  #username: to_do_list
-
-  # The password associated with the postgres role (username).
-  #password:
-
-  # Connect on a TCP socket. Omitted by default since the client uses a
-  # domain socket that doesn't need configuration. Windows does not have
-  # domain sockets, so uncomment these lines.
-  #host: localhost
-
-  # The TCP port the server listens on. Defaults to 5432.
-  # If your server runs on a different port number, change accordingly.
-  #port: 5432
+  database: dcjk6tj6u16q6q
+    #to-do-list-db
+  username: omkqpriiygtlnc
+    #postgres
+  password: 5707f34ee56ae853c8ffe653accf6deb6e6434eb4a02c3b222a8759bbc5139ff
+    #password
+  host: ec2-54-227-251-33.compute-1.amazonaws.com
+  #to-do-list-db.cmpccj6lazlj.us-east-2.rds.amazonaws.com
+  port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
